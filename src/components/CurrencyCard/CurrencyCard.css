@@ -1,10 +1,11 @@
 .currency-card {
-  border: 1px solid black;
-  height: max-content;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .currency-type {
   text-align: center;
+  font-size: 0.95rem;
 }
 
 .currency-name-img {
@@ -14,8 +15,8 @@
 }
 
 .currency-img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
 .currency-name span {

@@ -1,3 +1,28 @@
-.App {
-  text-align: center;
+ul {
+  list-style: none;
+}
+
+.currencies-container {
+  width: 80%;
+  margin: auto;
+  margin-top: -10rem;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currencies-table {
+  width: 100%;
+  box-shadow: rgb(0 0 0 / 40%) 0px 2px 15px -3px;
+}
+
+.table-head {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-page {
+  margin: 1.5rem 0;
 }
