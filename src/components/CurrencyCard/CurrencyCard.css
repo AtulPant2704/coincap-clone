@@ -1,0 +1,24 @@
+.currency-card {
+  border: 1px solid black;
+  height: max-content;
+}
+
+.currency-type {
+  text-align: center;
+}
+
+.currency-name-img {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.currency-img {
+  height: 40px;
+  width: 40px;
+}
+
+.currency-name span {
+  display: block;
+  text-align: left;
+}
