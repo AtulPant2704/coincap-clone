@@ -22,7 +22,7 @@ function App() {
           <thead>
             <tr className="currency-card table-head">
               <td className="currency-type">Rank</td>
-              <td className="currency-type">Name</td>
+              <td className="currency-type currency-name-heading">Name</td>
               <td className="currency-type">Price</td>
               <td className="currency-type">Market Cap</td>
               <td className="currency-type">VWAP (24Hr)</td>

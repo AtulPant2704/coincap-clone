@@ -28,6 +28,11 @@ ul {
   margin: 1.5rem 0;
 }
 
+.currency-name-heading {
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
 @media screen and (max-width: 1000px) {
   .currencies-container {
     width: 90%;

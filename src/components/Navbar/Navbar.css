@@ -28,6 +28,12 @@
   font-weight: 600;
   padding: 0.6rem 1.2rem;
   border-width: 0;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-5%);
+  transition: transform 0.2s;
 }
 
 @media screen and (max-width: 780px) {
