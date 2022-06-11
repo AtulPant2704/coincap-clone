@@ -26,3 +26,27 @@ ul {
 .btn-page {
   margin: 1.5rem 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .currencies-container {
+    width: 90%;
+  }
+  .currency-type:nth-child(5) {
+    display: none;
+  }
+  .currency-type:nth-child(6) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .currencies-container {
+    width: 100%;
+  }
+  .currency-type:nth-child(4) {
+    display: none;
+  }
+  .currency-type:nth-child(7) {
+    display: none;
+  }
+}

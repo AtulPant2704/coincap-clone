@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  width: 85%;
+  width: 90%;
   margin: auto;
   padding-top: 0.5rem;
 }
@@ -12,8 +12,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20%;
   margin: 0;
+  width: 25%;
 }
 
 .nav-title-img {
@@ -28,4 +28,10 @@
   font-weight: 600;
   padding: 0.6rem 1.2rem;
   border-width: 0;
+}
+
+@media screen and (max-width: 780px) {
+  .nav-header {
+    width: 100%;
+  }
 }
