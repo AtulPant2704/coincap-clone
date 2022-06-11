@@ -6,14 +6,12 @@ import "./App.css";
 
 function App() {
   const dispatch = useDispatch();
-  const { currencies, status } = useSelector((state) => state.currencies);
+  const { currencies } = useSelector((state) => state.currencies);
   const [pageNumber, setPageNumber] = useState(1);
 
   useEffect(() => {
     dispatch(getCurrencies(pageNumber));
   }, [pageNumber]);
-
-  console.log(pageNumber);
 
   return (
     <div className="App">

@@ -1,26 +1,44 @@
+import numeral from "numeral";
+import { getChangeIn24Hr } from "../../utils";
 import "./CurrencyCard.css";
 
-const CurrencyCard = () => {
+const CurrencyCard = ({
+  rank,
+  name,
+  symbol,
+  priceUsd,
+  marketCapUsd,
+  vwap24Hr,
+  supply,
+  volumeUsd24Hr,
+  changePercent24Hr,
+}) => {
+  const marketCap = numeral(Number(marketCapUsd)).format("($0.00a)");
+  const vWap = numeral(Number(vwap24Hr)).format("$0,0.00");
+  const price = numeral(Number(priceUsd)).format("$0,0.00");
+  const supplyCurr = numeral(Number(supply)).format("($0.00a)");
+  const volume = numeral(Number(volumeUsd24Hr)).format("($0.00a)");
+
   return (
     <tr className="currency-card">
-      <td className="currency-type">1</td>
+      <td className="currency-type">{rank}</td>
       <td className="currency-type currency-name-img">
         <img
-          src="https://assets.coincap.io/assets/icons/eth@2x.png"
+          src={`https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`}
           alt="eth"
           className="currency-img"
         />
         <div className="currency-name">
-          <span>Bitcoin</span>
-          <span>BTC</span>
+          <span>{name}</span>
+          <span>{symbol}</span>
         </div>
       </td>
-      <td className="currency-type">$29,505.21</td>
-      <td className="currency-type">$558.99b</td>
-      <td className="currency-type">$29,381.71</td>
-      <td className="currency-type">19.06m</td>
-      <td className="currency-type">$12.02b</td>
-      <td className="currency-type">-2.73%</td>
+      <td className="currency-type">{price}</td>
+      <td className="currency-type">{marketCap}</td>
+      <td className="currency-type">{vWap}</td>
+      <td className="currency-type">{supplyCurr}</td>
+      <td className="currency-type">{volume}</td>
+      <td className="currency-type">{getChangeIn24Hr(changePercent24Hr)}</td>
     </tr>
   );
 };
