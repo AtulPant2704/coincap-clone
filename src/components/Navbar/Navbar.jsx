@@ -19,7 +19,7 @@ const Navbar = () => {
           <i className="fa-solid fa-gear nav-icon"></i>
         </li>
         <li>
-          <button className="nav-button">Connect Wallet</button>
+          <button className="btn-primary">Connect Wallet</button>
         </li>
       </ul>
     </header>
