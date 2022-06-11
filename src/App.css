@@ -17,6 +17,7 @@ ul {
 .currencies-table {
   width: 100%;
   box-shadow: rgb(0 0 0 / 40%) 0px 2px 15px -3px;
+  border-collapse: collapse;
 }
 
 .table-head {
