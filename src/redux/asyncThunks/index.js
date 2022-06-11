@@ -1,0 +1,1 @@
+export { getCurrencies } from "./currenciesThunk";
