@@ -50,3 +50,9 @@ ul {
     display: none;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .currencies-container {
+    margin-top: -12rem;
+  }
+}
